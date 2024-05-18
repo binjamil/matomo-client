@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "declaration": true,
+    "declarationDir": "dist",
+    "strict": true,
+    "isolatedModules": true,
+    "strictNullChecks": false,
+    "moduleResolution": "node"
+  },
+
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}

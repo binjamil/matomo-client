@@ -1,0 +1,28 @@
+{
+  "name": "matomo-client",
+  "version": "1.0.0",
+  "description": "A thin wrapper around Matomo analytics",
+  "keywords": [
+    "analytics"
+  ],
+  "license": "MIT",
+  "author": "Muhammad Bin Jamil",
+  "files": [
+    "dist/matomo-client.cjs.js",
+    "dist/matomo-client.esm.js",
+    "dist/index.d.ts"
+  ],
+  "main": "dist/matomo-client.cjs.js",
+  "module": "dist/matomo-client.esm.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "npm run build:types && npm run build:js",
+    "build:js": "node build.mjs",
+    "build:types": "tsc --emitDeclarationOnly"
+  },
+  "devDependencies": {
+    "esbuild": "^0.21.3",
+    "prettier": "^3.2.5",
+    "typescript": "^5.4.5"
+  }
+}
