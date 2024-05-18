@@ -1,5 +1,11 @@
 # @mbinjamil/matomo-client
 
+## 0.1.1
+
+### Patch Changes
+
+- Set custom url in trackPageView
+
 ## 0.1.0
 
 ### Minor Changes

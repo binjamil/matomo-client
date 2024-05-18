@@ -26,6 +26,7 @@ export const load = (trackerUrl: string, siteId: number): void => {
 };
 
 export const trackPageView = (pageTitle?: string): void => {
+  window._paq.push(['setCustomUrl', window.location.href]);
   window._paq.push(["trackPageView", pageTitle]);
 };
 
