@@ -1,5 +1,11 @@
 # @mbinjamil/matomo-client
 
+## 0.0.3
+
+### Patch Changes
+
+- Setup GitHub actions for CI/CD
+
 ## 0.0.2
 
 ### Patch Changes
