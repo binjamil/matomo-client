@@ -1,5 +1,11 @@
 # @mbinjamil/matomo-client
 
+## 0.1.0
+
+### Minor Changes
+
+- 60273fe: Implement basic Matomo API functions
+
 ## 0.0.4
 
 ### Patch Changes
