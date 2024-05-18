@@ -1,5 +1,11 @@
 # @mbinjamil/matomo-client
 
+## 0.0.4
+
+### Patch Changes
+
+- 66328b4: Fix GitHub actions
+
 ## 0.0.3
 
 ### Patch Changes
