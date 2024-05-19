@@ -30,4 +30,4 @@ An optional numeric value
 
 ## Source
 
-[index.ts:53](https://github.com/binjamil/matomo-client/blob/a7ca6a85fbfefc0fecb6fccc11ed975b808ab0e5/src/index.ts#L53)
+[index.ts:65](https://github.com/binjamil/matomo-client/blob/0aa0d3c26d26b54fc742897faa51e4fa42a1e734/src/index.ts#L65)

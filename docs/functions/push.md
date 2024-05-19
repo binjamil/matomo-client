@@ -28,4 +28,4 @@ push([ 'API_method_name', parameter_list ]);
 
 ## Source
 
-[index.ts:71](https://github.com/binjamil/matomo-client/blob/a7ca6a85fbfefc0fecb6fccc11ed975b808ab0e5/src/index.ts#L71)
+[index.ts:83](https://github.com/binjamil/matomo-client/blob/0aa0d3c26d26b54fc742897faa51e4fa42a1e734/src/index.ts#L83)

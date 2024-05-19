@@ -19,4 +19,4 @@ A custom title that overrides the default HTML page title
 
 ## Source
 
-[index.ts:40](https://github.com/binjamil/matomo-client/blob/a7ca6a85fbfefc0fecb6fccc11ed975b808ab0e5/src/index.ts#L40)
+[index.ts:52](https://github.com/binjamil/matomo-client/blob/0aa0d3c26d26b54fc742897faa51e4fa42a1e734/src/index.ts#L52)

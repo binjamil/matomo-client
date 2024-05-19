@@ -4,7 +4,8 @@
 
 > **load**(`trackerUrl`, `siteId`): `void`
 
-Injects the Matomo tracking script into the DOM and loads it asynchronously
+Injects the Matomo tracking script into the DOM and loads it asynchronously.
+It is idempotent, i.e. safe to call multiple times, because it will only load the script once.
 
 ## Parameters
 
@@ -20,6 +21,14 @@ Site ID of the website you are tracking in Matomo
 
 `void`
 
+## Example
+
+```
+import { load } from "@mbinjamil/matomo-client";
+
+load("https://your-matomo-url.com", 1);
+```
+
 ## Source
 
-[index.ts:13](https://github.com/binjamil/matomo-client/blob/a7ca6a85fbfefc0fecb6fccc11ed975b808ab0e5/src/index.ts#L13)
+[index.ts:21](https://github.com/binjamil/matomo-client/blob/0aa0d3c26d26b54fc742897faa51e4fa42a1e734/src/index.ts#L21)

@@ -5,12 +5,24 @@ declare global {
 }
 
 /**
- * Injects the Matomo tracking script into the DOM and loads it asynchronously
+ * Injects the Matomo tracking script into the DOM and loads it asynchronously.
+ * It is idempotent, i.e. safe to call multiple times, because it will only load the script once.
  *
  * @param trackerUrl - Your Matomo URL
  * @param siteId - Site ID of the website you are tracking in Matomo
+ * 
+ * @example
+ * ```
+ * import { load } from "@mbinjamil/matomo-client";
+ * 
+ * load("https://your-matomo-url.com", 1);
+ * ```
  */
 export const load = (trackerUrl: string, siteId: number): void => {
+  if (window._paq) {
+    return;
+  }
+  
   let tracker = document.createElement("script");
   let firstScript =
     document.getElementsByTagName("script")[0] ||
