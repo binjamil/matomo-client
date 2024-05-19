@@ -1,6 +1,6 @@
 {
   "name": "@mbinjamil/matomo-client",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "A thin wrapper around Matomo analytics",
   "keywords": [
     "matomo",

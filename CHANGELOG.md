@@ -1,5 +1,11 @@
 # @mbinjamil/matomo-client
 
+## 0.3.2
+
+### Patch Changes
+
+- 25af39e: Add examples in code docs
+
 ## 0.3.1
 
 ### Patch Changes
