@@ -32,12 +32,15 @@
     "build:js": "node build.mjs",
     "build:types": "tsc --emitDeclarationOnly",
     "release": "pnpm build && pnpm changeset publish",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "docs": "typedoc src/index.ts --readme none"
   },
   "devDependencies": {
     "@changesets/cli": "^2.27.2",
     "esbuild": "^0.21.3",
     "prettier": "^3.2.5",
+    "typedoc": "^0.25.13",
+    "typedoc-plugin-markdown": "^4.0.2",
     "typescript": "^5.4.5"
   }
 }
