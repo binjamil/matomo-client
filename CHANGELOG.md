@@ -1,5 +1,11 @@
 # @mbinjamil/matomo-client
 
+## 0.3.0
+
+### Minor Changes
+
+- Add docs
+
 ## 0.2.0
 
 ### Minor Changes

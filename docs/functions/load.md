@@ -22,4 +22,4 @@ Site ID of the website you are tracking in Matomo
 
 ## Source
 
-[index.ts:13](https://github.com/binjamil/matomo-client/blob/ffe9db3ab8b729a706d4a5e6374173837f833606/src/index.ts#L13)
+[index.ts:13](https://github.com/binjamil/matomo-client/blob/a7ca6a85fbfefc0fecb6fccc11ed975b808ab0e5/src/index.ts#L13)
