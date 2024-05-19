@@ -28,6 +28,14 @@ An optional numeric value
 
 `void`
 
+## Example
+
+```
+import { trackEvent } from "@mbinjamil/matomo-client";
+
+trackEvent("ecommerce", "checkout", "total_amount", 1010);
+```
+
 ## Source
 
-[index.ts:65](https://github.com/binjamil/matomo-client/blob/0aa0d3c26d26b54fc742897faa51e4fa42a1e734/src/index.ts#L65)
+[index.ts:79](https://github.com/binjamil/matomo-client/blob/6ed3beaf3789c86fc90228d391fdeedb61a3c1c6/src/index.ts#L79)

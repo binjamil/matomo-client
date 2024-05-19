@@ -20,6 +20,8 @@ Heavily inspired by [fathom-client](https://github.com/derrickreimer/fathom-clie
 
 ## Usage
 
+### [API Reference](docs/README.md)
+
 The basic way to use this library to call `load` function when your app first loads (or mounts) and call any tracking functions wherever you want. Ideally you would call `trackPageView` whenever your app changes routes.
 
 Below I've described usage for two popular choices, but you can use it with any frontend library or framework by following the basic principles.
@@ -111,6 +113,3 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   );
 }
 ```
-
-### [API Reference](docs/README.md)
-

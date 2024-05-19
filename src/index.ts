@@ -6,7 +6,7 @@ declare global {
 
 /**
  * Injects the Matomo tracking script into the DOM and loads it asynchronously.
- * It is idempotent, i.e. safe to call multiple times, because it will only load the script once.
+ * It is idempotent, i.e. safe to call multiple times, because it will only load the script once
  *
  * @param trackerUrl - Your Matomo URL
  * @param siteId - Site ID of the website you are tracking in Matomo
@@ -22,7 +22,7 @@ export const load = (trackerUrl: string, siteId: number): void => {
   if (window._paq) {
     return;
   }
-  
+
   let tracker = document.createElement("script");
   let firstScript =
     document.getElementsByTagName("script")[0] ||
@@ -48,6 +48,13 @@ export const load = (trackerUrl: string, siteId: number): void => {
  * by default does not support client-side routing
  *
  * @param pageTitle - A custom title that overrides the default HTML page title
+ * 
+ * @example
+ * ```
+ * import { trackPageView } from "@mbinjamil/matomo-client";
+ * 
+ * trackPageView();
+ * ```
  */
 export const trackPageView = (pageTitle?: string): void => {
   push(["setCustomUrl", window.location.href]);
@@ -61,7 +68,14 @@ export const trackPageView = (pageTitle?: string): void => {
  * @param action - An event action (Play, Pause, Duration, Add Playlist, Downloaded, Clicked...)
  * @param name - An optional event name
  * @param value - An optional numeric value
- */
+ * 
+ * @example
+ * ```
+ * import { trackEvent } from "@mbinjamil/matomo-client";
+ * 
+ * trackEvent("ecommerce", "checkout", "total_amount", 1010);
+ * ```
+ */ 
 export const trackEvent = (
   category: string,
   action: string,

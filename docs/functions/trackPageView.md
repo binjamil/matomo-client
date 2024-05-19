@@ -17,6 +17,14 @@ A custom title that overrides the default HTML page title
 
 `void`
 
+## Example
+
+```
+import { trackPageView } from "@mbinjamil/matomo-client";
+
+trackPageView();
+```
+
 ## Source
 
-[index.ts:52](https://github.com/binjamil/matomo-client/blob/0aa0d3c26d26b54fc742897faa51e4fa42a1e734/src/index.ts#L52)
+[index.ts:59](https://github.com/binjamil/matomo-client/blob/6ed3beaf3789c86fc90228d391fdeedb61a3c1c6/src/index.ts#L59)
