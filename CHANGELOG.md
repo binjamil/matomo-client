@@ -1,5 +1,15 @@
 # @mbinjamil/matomo-client
 
+## 0.2.0
+
+### Minor Changes
+
+- Add low level `push` Matomo API
+
+### Patch Changes
+
+- Add code documentation
+
 ## 0.1.3
 
 ### Patch Changes

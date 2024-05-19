@@ -1,9 +1,13 @@
 {
   "name": "@mbinjamil/matomo-client",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "A thin wrapper around Matomo analytics",
   "keywords": [
-    "analytics"
+    "matomo",
+    "tracking",
+    "analytics",
+    "javascript",
+    "react"
   ],
   "homepage": "https://github.com/binjamil/matomo-client",
   "bugs": {
@@ -24,9 +28,10 @@
   "module": "dist/matomo-client.esm.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "build": "npm run build:types && npm run build:js",
+    "build": "pnpm build:types && pnpm build:js",
     "build:js": "node build.mjs",
     "build:types": "tsc --emitDeclarationOnly",
+    "release": "pnpm build && pnpm changeset publish",
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
