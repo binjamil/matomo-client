@@ -10,11 +10,11 @@ declare global {
  *
  * @param trackerUrl - Your Matomo URL
  * @param siteId - Site ID of the website you are tracking in Matomo
- * 
+ *
  * @example
  * ```
  * import { load } from "@mbinjamil/matomo-client";
- * 
+ *
  * load("https://your-matomo-url.com", 1);
  * ```
  */
@@ -24,22 +24,19 @@ export const load = (trackerUrl: string, siteId: number): void => {
   }
 
   let tracker = document.createElement("script");
-  let firstScript =
-    document.getElementsByTagName("script")[0] ||
-    document.querySelector("body");
-
-  const url = new URL(trackerUrl);
-  const cdn = new URL(url.host, "https://cdn.matomo.cloud");
-  cdn.pathname += "/matomo.js";
-  tracker.src = cdn.href;
+  tracker.src = "https://cdn.matomo.cloud/matomo.js";
   tracker.async = true;
 
+  const url = new URL(trackerUrl);
   url.pathname = "/matomo.php";
   window._paq = window._paq || [];
   push(["enableLinkTracking"]);
   push(["setTrackerUrl", url.href]);
   push(["setSiteId", siteId]);
 
+  let firstScript =
+    document.getElementsByTagName("script")[0] ||
+    document.querySelector("body");
   firstScript.parentNode.insertBefore(tracker, firstScript);
 };
 
@@ -48,11 +45,11 @@ export const load = (trackerUrl: string, siteId: number): void => {
  * by default does not support client-side routing
  *
  * @param pageTitle - A custom title that overrides the default HTML page title
- * 
+ *
  * @example
  * ```
  * import { trackPageView } from "@mbinjamil/matomo-client";
- * 
+ *
  * trackPageView();
  * ```
  */
@@ -68,14 +65,14 @@ export const trackPageView = (pageTitle?: string): void => {
  * @param action - An event action (Play, Pause, Duration, Add Playlist, Downloaded, Clicked...)
  * @param name - An optional event name
  * @param value - An optional numeric value
- * 
+ *
  * @example
  * ```
  * import { trackEvent } from "@mbinjamil/matomo-client";
- * 
+ *
  * trackEvent("ecommerce", "checkout", "total_amount", 1010);
  * ```
- */ 
+ */
 export const trackEvent = (
   category: string,
   action: string,
@@ -89,7 +86,7 @@ export const trackEvent = (
  * Low-level Matomo API to execute any supported configuration or tracking calls
  * @see https://developer.matomo.org/api-reference/tracking-javascript
  *
- * @param values - An array defining API method name and its parameters 
+ * @param values - An array defining API method name and its parameters
  *
  * @example
  * push([ 'API_method_name', parameter_list ]);

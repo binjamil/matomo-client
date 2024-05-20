@@ -1,5 +1,12 @@
 # @mbinjamil/matomo-client
 
+## 0.3.3
+
+### Patch Changes
+
+- Update README
+- Fix matomo.js script CDN URL
+
 ## 0.3.2
 
 ### Patch Changes

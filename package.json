@@ -1,6 +1,6 @@
 {
   "name": "@mbinjamil/matomo-client",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "A thin wrapper around Matomo analytics",
   "keywords": [
     "matomo",
@@ -31,7 +31,7 @@
     "build": "pnpm build:types && pnpm build:js",
     "build:js": "node build.mjs",
     "build:types": "tsc --emitDeclarationOnly",
-    "release": "pnpm run docs && pnpm build && pnpm changeset publish",
+    "release": "pnpm build && pnpm changeset publish",
     "typecheck": "tsc --noEmit",
     "docs": "typedoc src/index.ts --readme none"
   },

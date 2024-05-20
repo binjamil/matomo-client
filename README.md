@@ -1,4 +1,4 @@
-# Matomo client
+# Matomo Client
 
 A framework-agnostic JavaScript client for [Matomo analytics](https://matomo.org/).
 
@@ -28,7 +28,7 @@ Below I've described usage for two popular choices, but you can use it with any 
 
 ### React Router (or Remix)
 
-Create a new component `<Matomo>`
+Create a new `<Matomo>` component:
 
 ```jsx
 import { useLocation } from "react-router-dom";
@@ -52,7 +52,7 @@ export default function Matomo() {
 }
 ```
 
-Then, add the component to the root route or layout
+Then, add the component to the root route or layout:
 
 ```jsx
 import { NavLink, Outlet, useLocation } from "react-router-dom";
@@ -70,7 +70,7 @@ export default function Root() {
 
 ### Next.js
 
-Create a client component `<Matomo>`
+Create a new `<Matomo>` client component:
 
 ```jsx
 "use client"
